@@ -28,7 +28,7 @@ describe( "authentication.js", function(){
     afterEach(function(){
     });
 
-    describe("::isOwnerValid()", function() {
+/*     describe("::isOwnerValid()", function() {
         // ここからテスト。
         it("パスワードが正しい場合", function(){
             var isOwnerValid = target.isOwnerValid;
@@ -37,7 +37,7 @@ describe( "authentication.js", function(){
             assert( result, "trueが返却されること" )
         });
         it("パスワードが不正の場合");
-    });
+    }); */
 });
 
 

@@ -99,20 +99,20 @@ describe( "scraping.js", function(){
             });
         });
 
-        it("キャッシュからの読み込みに失敗した場合の応答", function(){
-            var stub_fs = {
-                "readFile" : sinon.stub()
-            };
-            stub_fs.readFile.callsArgWith(2, /* err= */{"read":"errer"}, /* data= */null);
-            target.api_impl.fs = stub_fs;
+        // it("キャッシュからの読み込みに失敗した場合の応答", function(){
+        //     var stub_fs = {
+        //         "readFile" : sinon.stub()
+        //     };
+        //     stub_fs.readFile.callsArgWith(2, /* err= */{"read":"errer"}, /* data= */null);
+        //     target.api_impl.fs = stub_fs;
             
-            return shouldRejected(
-                readCacheHtmlAndParseToEventArray()
-            ).then(function(result){
-                assert(result);
-                // expect(result).has.property("httpStatus").to.be.equal(200);
-            });
-        });
+        //     return shouldRejected(
+        //         readCacheHtmlAndParseToEventArray()
+        //     ).then(function(result){
+        //         assert(result);
+        //         // expect(result).has.property("httpStatus").to.be.equal(200);
+        //     });
+        // });
 
     });
 
