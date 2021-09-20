@@ -4,7 +4,7 @@
  */
 
  
-var VALID_USERNAME = process.env.USER_NAME || "jbfree5";
+var VALID_USERNAME = process.env.USER_NAME || "";
 
 
 exports.isOwnerValid = function (queryObject) {
